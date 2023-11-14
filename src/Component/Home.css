@@ -1,0 +1,27 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  img.hovered {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+  }
+
+
+  /*  icon core css code  */
+
+  .icon-container {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    color: #000;
+  }
+  
+  .icon-container.hovered {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    color: red;
+  }
