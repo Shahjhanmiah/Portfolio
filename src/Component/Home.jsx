@@ -30,11 +30,15 @@ const Home = () => {
                                 </span>
 
                             </span>
-                            <div className= {`icon-container ${isHovered ? 'hovered' : ''}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-                               <FaSquareGithub></FaSquareGithub>
-                            </div>
+                            
                         </h1>
+                        <div className='text-5xl'>
+                        <div className= {`icon-container ${isHovered ? 'hovered' : ''}`}  onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                               < FaSquareGithub></FaSquareGithub>
+                               
+                            </div>
                     </div>
+                        </div>
                     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left  pt-10">
 
                         <figure> <div className="image-container" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
