@@ -1,6 +1,8 @@
 
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter,Cursor } from 'react-simple-typewriter'
 import img1 from '../assets/my-bg2 (2).png'
+import { FaSquareGithub,  } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Home = () => {
     const text =   Typewriter({
         words:['Web Developer','Mern Stack Developer','React Developer'],
@@ -20,7 +22,14 @@ const Home = () => {
 
                         <span style={{fontWeight:'bold',color:'orange'}}>
                             {text}
+
+                            <span style={{color:'red'}}>
+                            <Cursor cursorStyle='>'></Cursor>
                         </span>
+                         
+                        </span>
+                        <Link to={'/https://github.com/Shahjhanmiah'}> <FaSquareGithub></FaSquareGithub></Link>
+                       
                     </h1>
                  </div>
                     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left  pt-10">
